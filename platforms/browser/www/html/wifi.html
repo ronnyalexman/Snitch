@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Summary</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--css-->
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/rwd-tables.css">
+        <link rel="stylesheet" href="../css/shop-homepage.css" type="text/css">
+        <link rel="stylesheet" href="../css/wifi.css" type="text/css">
+
+
+        <!--JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="../js/json2.js"></script>
+        <script src="../js/jquery.rwd-tables.js"></script>
+        <script type="text/javascript" src="../js/wifi.js"></script>
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-lg-6 col-sm-6 col-12">
+                <div class="card">
+                    <div class="card-img-top">
+                        <table id="router">
+                            <tbody>
+                                <tr>
+                                    <td rowspan="3">
+                                        <img src="../img/router_icon.png" alt="">  
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-12">
+                <div class="card">
+                    <div class="card-img-top">
+                        <table id="server">
+                            <tbody>
+                                <tr>
+                                    <td rowspan="3">
+                                        <img src="../img/servidor_icon.png" alt="">  
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <table class="rwd-tables" id="devices">
+            <tbody>
+                <tr>
+                    <th>Name</th>
+                    <th>IP</th>
+                    <th>MAC</th>		
+                    <th>Manufacturer</th>
+                    <th>Latency</th>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </body>
+</html>

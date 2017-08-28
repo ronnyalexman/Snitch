@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+	<widget xmlns 		= "http://www.w3.org/ns/widgets"
+			xmlns:gap 	= "http://phonegap.com/ns/1.0"
+			id 			= "com.phonegap.example"
+			versionCode	= "10"
+			version		= "1.0.0" >
+
+		<name>Snitch-Wifi o Soplón del Wifi</name>
+		<description>Aplicación para detectar dispositivos unidos a mi red</description>
+		<author href="ynnor.ddns.net" email="ronnyecu@gmail.com">
+			ynnor.ddns.net
+		</author>
+	</widget>

@@ -1,0 +1,147 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12-ago-2017, 1:36:29
+    Author     : ronny
+*/
+@font-face{
+    font-family: unown;
+    src: url(../fonts/spaceAge.ttf);
+}
+
+body {
+    overflow-y: scroll;
+    width: 100%;
+    font-family: unown;
+    /* Location of the image */
+    background-image: url(../img/background.jpg);
+
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+
+    /* Background image doesn't tile */
+    background-repeat: no-repeat;
+
+    /* Background image is fixed in the viewport so that it doesn't move when 
+       the content's height is greater than the image's height */
+    background-attachment: fixed;
+
+    /* This is what makes the background image rescale based
+       on the container's size */
+    background-size: cover;
+
+    /* Set a background color that will be displayed
+       while the background image is loading */
+    background-color: #464646;
+}
+#devices { 
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%; 
+    border-collapse: collapse; 
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+    background-color: rgba(255, 255, 255, 0.5); 
+}
+th { 
+    background: #333; 
+    color: white; 
+    font-weight: bold; 
+}
+td, th { 
+    padding: 6px; 
+    border: 1px solid #ccc; 
+    text-align: left; 
+}
+/* Hide new mobile heading on desktop */
+td span.rwd-tables.thead { 
+    display: none;
+}
+
+.resumen:nth-of-type(odd) { 
+    background-color: rgba(52, 152, 219, 0.8); 
+}
+
+.card{
+    table{
+        tr{
+            background-color: transparent;
+            td{
+                border: none;
+            }
+        }
+    }
+    background-color: rgba(52, 152, 219, 0.7);
+    font-size: 10pt;
+    color: white;
+    h4{
+        font-size: 15pt;
+    }
+    h5{
+        font-size: 13pt;
+    }
+    td{
+        text-align:center;
+    }
+    img{
+        width: 35%;
+    }
+}
+
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+    /* Force table to not be like tables anymore */
+    table.rwd-tables, .rwd-tables thead, .rwd-tables tbody, .rwd-tables th, .rwd-tables tbody,
+    .rwd-tables td, .rwd-tables tr { 
+        display: block; 
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    .rwd-tables thead, .rwd-tables th { 
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .rwd-tables tfoot {
+        display: block;
+        text-align: right;
+    }
+
+    .rwd-tables tfoot td {
+        display: inline-block;
+    }
+
+    td span.rwd-tables, td span.rwd-tables.thead {
+        width: 50%;
+        display: inline-block;
+    }
+    td span.rwd-tables.tbody{
+        text-align: right;
+    }
+
+    /* 
+    Generic Styling, for Mobiles
+    */
+
+    .rwd-tables tfoot tr:nth-of-type(odd), .rwd-tables tfoot td { 
+        background: #333; 
+        color: white; 
+        font-weight: bold; 
+        border-bottom: none;
+    }
+
+    .rwd-tables tr { border: 1px solid #ccc; }
+
+    .rwd-tables td { 
+        border: none;
+        border-bottom: 1px solid #eee; 
+        position: relative;
+    }
+
+}

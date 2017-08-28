@@ -1,0 +1,68 @@
+/**
+By: ronnyecu@gmail.com
+
+*/
+@font-face {
+  font-family: unown;
+  src: url(../fonts/Unown.ttf); }
+body {
+  overflow-y: scroll;
+  width: 100%;
+  font-family: unown;
+  /* Location of the image */
+  background-image: url(../img/background.jpg);
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646; }
+
+#nav {
+  border: 0;
+  background-image: none;
+  font-weight: bold;
+  background-color: rgba(0, 187, 213, 0.8); }
+  #nav .navbar-brand {
+    background-image: none;
+    background-color: #4eb6c3;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    text-align: center; }
+  #nav .center {
+    text-align: center;
+    font-size: 80pt;
+    color: white;
+    align-content: center; }
+
+#botonWifi {
+  margin-top: 50%;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+#relleno {
+  margin-bottom: 58%; }
+
+/* For desktop devices */
+@media (min-width: 991px) {
+  #botonWifi {
+    margin-top: 15%; }
+
+  #relleno {
+    margin-bottom: 5%; }
+
+  #nav .center {
+    font-size: 30pt; } }
+
+/*# sourceMappingURL=index.css.map */
